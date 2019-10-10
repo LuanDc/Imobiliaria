@@ -7,6 +7,13 @@ body {
   background: #fff;
 }
 
+.introducao {
+  background: url("../public/imagem-introducao.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 700px;
+}
+
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .active > .nav-link {
   color: $danger;
