@@ -6,3 +6,8 @@
 body {
   background: #fff;
 }
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active > .nav-link {
+  color: $danger;
+}
