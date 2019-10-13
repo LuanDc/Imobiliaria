@@ -13,16 +13,37 @@
       <div class="container">
         <div class="row text-white">
           <div class="col-sm-4">
-            <span>Avenida Pequeno Principe, 0 - Campeche</span>
-            <span>Florianópolis/SC</span>
+            <div class="row">
+              <div class="col-2 text-center my-auto d-flex align-items-center">
+                <i class="far fa-paper-plane h3"></i>
+              </div>
+              <div class="col-10">
+                <span>Avenida Pequeno Principe, 0 - Campeche</span>
+                <span>Florianópolis/SC</span>
+              </div>
+            </div>
           </div>
           <div class="col-sm-4">
-            <span>Avenida Pequeno Principe, 0 - Campeche</span>
-            <span>Florianópolis/SC</span>
+            <div class="row">
+              <div class="col-2 text-center my-auto d-flex align-items-center">
+                <i class="far fa-clock h3"></i>
+              </div>
+              <div class="col-10">
+                <span>Avenida Pequeno Principe, 0 - Campeche</span>
+                <span>Florianópolis/SC</span>
+              </div>
+            </div>
           </div>
           <div class="col-sm-4">
-            <span>Avenida Pequeno Principe, 0 - Campeche</span>
-            <span>Florianópolis/SC</span>
+            <div class="row">
+              <div class="col-2 text-center my-auto d-flex align-items-center">
+                <i class="fas fa-envelope h3"></i>
+              </div>
+              <div class="col-10">
+                <span>Avenida Pequeno Principe, 0 - Campeche</span>
+                <span>Florianópolis/SC</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -65,22 +86,479 @@
       </div>
     </nav>
     <main>
-      <section class="introducao">
+      <section class="introducao d-flex align-items-center">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <div class="card bg-dark text-white">
-                <div class="card-body">
-                  <h1 class="h2">
+            <div class="col-md-8">
+              <div class="card bg-dark text-white align-middle opacity-8">
+                <div class="card-body p-5">
+                  <h1 class="h1">
                     ENCONTRE O IMÓVEL IDEAL PRA VOCÊ E SUA FAMÍLIA MORAR NA
                     PRAIA
                   </h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mt-3">
+                  <button type="button" class="btn btn-danger">
+                    Quero <span class="font-weight-bold">alugar!</span>
+                  </button>
+                  <button type="button" class="btn btn-danger">
+                    Quero <span class="font-weight-bold">comprar!</span>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="container">
+        <div class="row">
+          <div class="col-12 p-5">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-lg-3">
+                  <label for="inputState text-dark"
+                    ><strong>Comprar ou alugar?</strong></label
+                  >
+                  <select id="inputState" class="form-control bg-grey border-0">
+                    <option selected>Escolha...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-lg-3">
+                  <label for="inputState text-dark"
+                    ><strong>O que você quer?</strong></label
+                  >
+                  <select id="inputState" class="form-control bg-grey border-0">
+                    <option selected>Escolha...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-lg-3">
+                  <label for="inputState text-dark"
+                    ><strong>Qual o tipo de imóvel?</strong></label
+                  >
+                  <select id="inputState" class="form-control bg-grey border-0">
+                    <option selected>Escolha...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-lg-3">
+                  <label for="inputState text-dark"
+                    ><strong>Onde você quer?</strong></label
+                  >
+                  <select id="inputState" class="form-control bg-grey border-0">
+                    <option selected>Escolha...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="text-danger stretched-link"
+                  >Filtro avançado</a
+                >
+                <button type="submit" class="btn btn-danger">
+                  <i class="fas fa-search mr-2"></i> Pesquisar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="bg-grey py-5">
+        <div class="container text-center">
+          <h2 class="h2 text-dark">
+            Ambiente no seu <strong class="text-danger">estilo</strong>
+          </h2>
+          <p class="text-secondary border-bottom border-danger pb-2 mb-5">
+            Encontre o imóvel com a experiência que você quer viver
+          </p>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <img
+                class="img-fluid"
+                src="./public/apartamento.jpg"
+                alt="Foto 1"
+              />
+            </div>
+            <div class="col-md-4  mb-4">
+              <img
+                class="img-fluid"
+                src="./public/apartamento.jpg"
+                alt="Foto 2"
+              />
+            </div>
+            <div class="col-md-4  mb-4">
+              <img
+                class="img-fluid"
+                src="./public/apartamento.jpg"
+                alt="Foto 3"
+              />
+            </div>
+            <div class="col-md-4  mb-4">
+              <img
+                class="img-fluid"
+                src="./public/apartamento.jpg"
+                alt="Foto 4"
+              />
+            </div>
+            <div class="col-md-4  mb-4">
+              <img
+                class="img-fluid"
+                src="./public/apartamento.jpg"
+                alt="Foto 5"
+              />
+            </div>
+            <div class="col-md-4  mb-4">
+              <img
+                class="img-fluid"
+                src="./public/apartamento.jpg"
+                alt="Foto 6"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container py-5">
+        <div
+          class="d-flex justify-content-between align-items-center border-bottom border-danger pb-2 mb-5"
+        >
+          <h2 class="h2 text-danger">À Venda</h2>
+          <a href="#" class="text-danger">ver mais</a>
+        </div>
+        <div class="row">
+          <div class="card-deck">
+            <div class="card">
+              <img
+                src="./public/apartamento.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-danger">
+                  Linda casa no Rio Tavares com vista para o mar.
+                </h5>
+                <span class="card-text text-dark d-block">
+                  Imóvel residencial
+                </span>
+                <small class="card-text">
+                  <small class="text-muted">Apartamento - Campeche</small>
+                </small>
+                <h3 class="h4 text-danger mt-2">
+                  <strong>R$ 2.300,00/mês</strong>
+                </h3>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm btn-block mt-3"
+                >
+                  Ver imóvel
+                </button>
+              </div>
+              <div class="card-footer text-dark d-flex justify-content-between px-5">
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-bed h4"></i>
+                    <span class="text-muted">1</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-warehouse h4"></i>
+                    <span class="text-muted">4</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-home h4"></i>
+                    <span class="text-muted">180 m²</span>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+              <img
+                src="./public/apartamento.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-danger">
+                  Linda casa no Rio Tavares com vista para o mar.
+                </h5>
+                <span class="card-text text-dark d-block">
+                  Imóvel residencial
+                </span>
+                <small class="card-text">
+                  <small class="text-muted">Apartamento - Campeche</small>
+                </small>
+                <h3 class="h4 text-danger mt-2">
+                  <strong>R$ 2.300,00/mês</strong>
+                </h3>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm btn-block mt-3"
+                >
+                  Ver imóvel
+                </button>
+              </div>
+              <div class="card-footer text-dark d-flex justify-content-between px-5">
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-bed h4"></i>
+                    <span class="text-muted">1</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-warehouse h4"></i>
+                    <span class="text-muted">4</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-home h4"></i>
+                    <span class="text-muted">180 m²</span>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+              <img
+                src="./public/apartamento.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-danger">
+                  Linda casa no Rio Tavares com vista para o mar.
+                </h5>
+                <span class="card-text text-dark d-block">
+                  Imóvel residencial
+                </span>
+                <small class="card-text">
+                  <small class="text-muted">Apartamento - Campeche</small>
+                </small>
+                <h3 class="h4 text-danger mt-2">
+                  <strong>R$ 2.300,00/mês</strong>
+                </h3>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm btn-block mt-3"
+                >
+                  Ver imóvel
+                </button>
+              </div>
+              <div class="card-footer text-dark d-flex justify-content-between px-5">
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-bed h4"></i>
+                    <span class="text-muted">1</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-warehouse h4"></i>
+                    <span class="text-muted">4</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-home h4"></i>
+                    <span class="text-muted">180 m²</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-grey py-5">
+        <div class="container">
+          <div
+            class="d-flex justify-content-between align-items-center border-bottom border-danger pb-2 mb-5"
+          >
+            <h2 class="h2 text-danger">Para alugar</h2>
+            <a href="#" class="text-danger">ver mais</a>
+          </div>
+          <div class="row">
+            <div class="card-deck">
+              <div class="card">
+                <img
+                  src="./public/apartamento.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-danger">
+                    Linda casa no Rio Tavares com vista para o mar.
+                  </h5>
+                  <span class="card-text text-dark d-block">
+                    Imóvel residencial
+                  </span>
+                  <small class="card-text">
+                    <small class="text-muted">Apartamento - Campeche</small>
+                  </small>
+                  <h3 class="h4 text-danger mt-2">
+                    <strong>R$ 2.300,00/mês</strong>
+                  </h3>
+                  <button
+                    type="button"
+                    class="btn btn-danger btn-sm btn-block mt-3"
+                  >
+                    Ver imóvel
+                  </button>
+                </div>
+                <div class="card-footer text-dark d-flex justify-content-between px-5">
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-bed h4"></i>
+                    <span class="text-muted">1</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-warehouse h4"></i>
+                    <span class="text-muted">4</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <i class="fas fa-home h4"></i>
+                    <span class="text-muted">180 m²</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="./public/apartamento.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-danger">
+                    Linda casa no Rio Tavares com vista para o mar.
+                  </h5>
+                  <span class="card-text text-dark d-block">
+                    Imóvel residencial
+                  </span>
+                  <small class="card-text">
+                    <small class="text-muted">Apartamento - Campeche</small>
+                  </small>
+                  <h3 class="h4 text-danger mt-2">
+                    <strong>R$ 2.300,00/mês</strong>
+                  </h3>
+                  <button
+                    type="button"
+                    class="btn btn-danger btn-sm btn-block mt-3"
+                  >
+                    Ver imóvel
+                  </button>
+                </div>
+                <div class="card-footer text-dark d-flex justify-content-between px-5">
+                    <div class="d-flex flex-column align-items-center">
+                      <i class="fas fa-bed h4"></i>
+                      <span class="text-muted">1</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                      <i class="fas fa-warehouse h4"></i>
+                      <span class="text-muted">4</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                      <i class="fas fa-home h4"></i>
+                      <span class="text-muted">180 m²</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="card">
+                <img
+                  src="./public/apartamento.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-danger">
+                    Linda casa no Rio Tavares com vista para o mar.
+                  </h5>
+                  <span class="card-text text-dark d-block">
+                    Imóvel residencial
+                  </span>
+                  <small class="card-text">
+                    <small class="text-muted">Apartamento - Campeche</small>
+                  </small>
+                  <h3 class="h4 text-danger mt-2">
+                    <strong>R$ 2.300,00/mês</strong>
+                  </h3>
+                  <button
+                    type="button"
+                    class="btn btn-danger btn-sm btn-block mt-3"
+                  >
+                    Ver imóvel
+                  </button>
+                </div>
+                <div class="card-footer text-dark d-flex justify-content-between px-5">
+                    <div class="d-flex flex-column align-items-center">
+                      <i class="fas fa-bed h4"></i>
+                      <span class="text-muted">1</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                      <i class="fas fa-warehouse h4"></i>
+                      <span class="text-muted">4</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                      <i class="fas fa-home h4"></i>
+                      <span class="text-muted">180 m²</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-dark py-5 text-center">
+        <div class="container">
+          <h2 class="h2 text-white">Quer ficar por dentro das novidades?</h2>
+          <p class="text-white mt-4 mx-auto custom-width">
+            Deixe o seu nome e o seu melhor e-mail nos campos abaixo e nós vamos
+            lhe informar sobre os melhores negócios e todos os lançamentos do
+            sul da ilha
+          </p>
+          <form class="mx-auto custom-width">
+            <input
+              type="email"
+              class="form-control mb-3"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Digite o seu nome"
+            />
+            <input
+              type="password"
+              class="form-control mb-3"
+              id="exampleInputPassword1"
+              placeholder="Digite o seu melhor email"
+            />
+            <button type="submit" class="btn btn-danger btn-block">
+              Me avise
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="h4 text-muted border-bottom border-muted pb-2">
+            Navegue <span class="text-danger">Aqui!</span>
+          </h3>
+          <ul class="list-unstyled text-muted">
+              <li><a href="#" class="text-muted">Home</a></li>
+              <li><a href="#" class="text-danger">Destaque</a></li>
+              <li><a href="#" class="text-muted">Alugar</a></li>
+              <li><a href="#" class="text-muted">Comprar</a></li>
+              <li><a href="#" class="text-muted">Contato</a></li>
+        </div>
+        <div class="col-md-6">
+            <h3 class="h4 text-muted border-bottom border-muted pb-2">
+                Nos <span class="text-danger">Conheça!</span>
+            </h3>
+            <p class="text-muted d-block">Nossa maior satisfação é lhe ajudar a encontrar seu imóvel dos sonhos nos bairros sul da ilha da magia, em Florianópolis</p>
+            <h3 class="h4 text-muted border-bottom border-muted pb-2">
+                Quer <span class="text-danger">Investir!</span>
+            </h3>
+            <p class="text-muted d-block">Entre em contato com a nossa equipe e vamos lhe informar sempre sobre os melhores negócios</p>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+            <a href="#" class="py-2 px-3 rounded mr-3 bg-danger align-self-start">
+                <i class="fab fa-facebook-f text-white"></i>
+            </a>
+            <a href="#" class="py-2 px-3 rounded mr-3 bg-danger align-self-start">
+                <i class="fab fa-twitter text-white"></i>
+            </a>
+            <a href="#" class="py-2 px-3 rounded mr-3 bg-danger align-self-start">
+                <i class="fab fa-instagram text-white"></i>
+            </a>
+        </div>
+      </div>
+    </footer>
+    <div class="container-fluid bg-danger text-center p-3">
+      <span class="text-white">Imobiliária | CRECI 1234 | Avenida pequeno principe, 0 - Campeche Floripa/SC</span>
+    </div>
   </body>
 </html>
