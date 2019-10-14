@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CompressionPlugin = require('compression-webpack-plugin');
+const CompressionPlugin = require("compression-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const webpack = require("webpack");
@@ -9,13 +9,16 @@ const path = require("path");
 const globSync = require("glob").sync;
 
 module.exports = (env, options) => ({
-  entry: ["./src/index.js"],
+  entry: {
+    index: "./src/index.js",
+    detalhes: "./src/detalhes.js"
+  },
   devServer: {
     contentBase: "./dist"
   },
   devtool: "source-map",
   node: {
-    fs: 'empty'
+    fs: "empty"
   },
   module: {
     rules: [
@@ -32,13 +35,10 @@ module.exports = (env, options) => ({
               },
           "css-loader",
           {
-            loader: 'postcss-loader', 
+            loader: "postcss-loader",
             options: {
-              plugins: function () {
-                return [
-                  require('precss'),
-                  require('autoprefixer')
-                ];
+              plugins: function() {
+                return [require("precss"), require("autoprefixer")];
               }
             }
           },
@@ -62,7 +62,7 @@ module.exports = (env, options) => ({
         use: {
           loader: "html-srcsets-loader",
           options: {
-            attrs: [":src", ':srcset']
+            attrs: [":src", ":srcset"]
           }
         }
       },
@@ -79,17 +79,29 @@ module.exports = (env, options) => ({
     ]
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/detalhes.html",
+      inject: true,
+      chunks: ["detalhes"],
+      filename: "detalhes.html"
+    }),
     new MiniCssExtractPlugin({
       filename: "css/[name].[contenthash].css"
     }),
-    new CleanWebpackPlugin(["dist"]),
-    ...globSync("src/**/*.html").map(fileName => {
-      return new HtmlWebpackPlugin({
-        template: fileName,
-        inject: "body",
-        filename: fileName.replace("src/", "")
-      });
-    }),
+    // new CleanWebpackPlugin(["dist"]),
+    // ...globSync("src/**/*.html").map(fileName => {
+    //   return new HtmlWebpackPlugin({
+    //     template: fileName,
+    //     inject: "body",
+    //     filename: fileName.replace("src/", "")
+    //   });
+    // }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
@@ -101,16 +113,16 @@ module.exports = (env, options) => ({
   ],
   optimization: {
     minimizer: [
-        new UglifyJsPlugin({
-            cache: true,
-            parallel: true,
-            sourceMap: false,
-            extractComments: false
-        }),
-        new CompressionPlugin({
-            test: /\.js$|\.css(\?.*)?$/i
-        }),
-        new OptimizeCSSAssetsPlugin({})
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: false,
+        extractComments: false
+      }),
+      new CompressionPlugin({
+        test: /\.js$|\.css(\?.*)?$/i
+      }),
+      new OptimizeCSSAssetsPlugin({})
     ]
   },
   output: {

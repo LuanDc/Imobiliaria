@@ -11,7 +11,7 @@ Clone the repo:
 
 Navigate to the project folder:
 
-    cd webpack-sass-bootstrap-boilerplate
+    cd imobiliaria
 
 Install all packages and dependencies required for this project:
 
